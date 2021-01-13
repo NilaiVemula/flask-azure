@@ -4,7 +4,7 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 
-RUN sudo apt install python-gevent
+# RUN apt install python-gevent
 
 RUN apt-get update \
     && apt-get install -y \
@@ -59,5 +59,6 @@ RUN ln -s \
 
 EXPOSE 8000
 EXPOSE 2222 80
+WORKDIR /app
 ENTRYPOINT ["python"]
 CMD ["app/app.py"]
