@@ -2,4 +2,6 @@
 
 ```
 docker build .
+docker images
+docker run
 ```
