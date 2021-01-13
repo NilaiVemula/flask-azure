@@ -25,7 +25,7 @@ RUN apt-get update \
         libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install numpy
+# RUN pip install numpy
 
 WORKDIR /
 ENV OPENCV_VERSION="3.4.10"
