@@ -31,4 +31,4 @@ jobs:
       with:
         app-name: 'csnet-flask'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e234ced0d8594f04b2fe9ea0dc416b42 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_46a1bb7abb82469eb24f0e3e590787e6 }}
