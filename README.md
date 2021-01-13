@@ -1,1 +1,5 @@
 # flask-azure
+
+```
+docker build .
+```
