@@ -55,9 +55,13 @@ def index():
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
     if request.method == 'POST':
-        print(request.json)
+        print("POST request")
+        # print(request.json)
         # Get the image from post request
         img = base64_to_pil(request.json)
+
+        # print working directory
+        print(f'WORKING DIRECTORY: {os.getcwd()}')
 
         # Save the image to ./uploads
         img.save("data/flask/image.png")
